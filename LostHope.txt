@@ -1,0 +1,269 @@
+import time
+def print_logo():
+  logo = """
+  .__                  __    .__                          
+  |  |   ____  _______/  |_  |  |__   ____ ______   ____  
+  |  |  /  _ \/  ___/\   __\ |  |  \ /  _ \\____ \_/ __ \ 
+  |  |_(  <_> )___ \  |  |   |   Y  (  <_> )  |_> >  ___/ 
+  |____/\____/____  > |__|   |___|  /\____/|   __/ \___  >
+                  \/              \/       |__|        \
+  """
+  print(logo)
+
+print_logo()
+
+
+def display_intro():
+
+    print("Welcome to 'Lost Hope by dhdh2k on snapchat'")
+    print("You find yourself in a desolate world, filled with sorrow.")
+    print("Your mission is to navigate through the levels and uncover the sad story.")
+    print("Let's begin...\n")
+
+def level_one():
+    print("Level 1: The Abandoned Village")
+    print("You enter an abandoned village with dilapidated houses and silence all around.")
+    print("You hear faint whispers of the past. You see two paths ahead.")
+    choice = input("Do you choose 'Left' or 'Right'? ").lower()
+
+    if choice == 'left':
+        print("You follow the left path and discover a broken playground, a symbol of lost innocence.")
+        time.sleep(2)
+        print("You feel a deep sense of melancholy.")
+        return True
+    elif choice == 'right':
+        print("You choose the right path and encounter a crumbling church, a place that once held hope.")
+        time.sleep(2)
+        print("You sense a profound sadness lingering in the air.")
+        return True
+    else:
+        print("Invalid choice. Try again.")
+        return level_one()
+
+def level_two():
+    print("\nLevel 2: The Whispering Woods")
+    print("You find yourself in a dense forest with trees whispering sorrowful tales.")
+    print("You come across a fork in the road with signs pointing to 'Forgotten Memories' and 'Lost Dreams'.")
+    choice = input("Which path do you take? ").lower()
+
+    if choice == 'forgotten memories':
+        print("You tread the path of forgotten memories and encounter ghostly echoes of laughter.")
+        time.sleep(2)
+        print("The memories of happier times now only haunt the shadows.")
+        return True
+    elif choice == 'lost dreams':
+        print("You follow the path of lost dreams and witness remnants of broken aspirations.")
+        time.sleep(2)
+        print("The dreams that once soared are now shattered, leaving a trail of despair.")
+        return True
+    else:
+        print("Invalid choice. Try again.")
+        return level_two()
+
+def level_three():
+    print("\nLevel 3: The Desolate Riverbank")
+    print("You reach a desolate riverbank with gray water flowing slowly.")
+    print("On the riverbank, you see two old boats named 'Regret' and 'Longing'.")
+    choice = input("Which boat do you choose? ").lower()
+
+    if choice == 'regret':
+        print("You board the boat named 'Regret' and sail through the river of missed opportunities.")
+        time.sleep(2)
+        print("Each ripple in the water echoes the chances that slipped away.")
+        return True
+    elif choice == 'longing':
+        print("You board the boat named 'Longing' and navigate through the river of unfulfilled desires.")
+        time.sleep(2)
+        print("The shores are lined with the echoes of what could have been.")
+        return True
+    else:
+        print("Invalid choice. Try again.")
+        return level_three()
+
+def level_four():
+    print("\nLevel 4: The Cursed Meadow")
+    print("You find yourself in a meadow where flowers wilt as you pass.")
+    print("There are three paths ahead named 'Heartbreak', 'Despair', and 'Solitude'.")
+    choice = input("Which path do you choose? ").lower()
+
+    if choice == 'heartbreak':
+        print("You walk the path of heartbreak and witness the wilting of love's bloom.")
+        time.sleep(2)
+        print("The petals fall, carrying the weight of shattered emotions.")
+        return True
+    elif choice == 'despair':
+        print("You tread the path of despair, where the very ground seems to cry.")
+        time.sleep(2)
+        print("The desolation is so thick that even the air feels heavy with hopelessness.")
+        return True
+    elif choice == 'solitude':
+        print("You choose the path of solitude, surrounded by a lonely breeze.")
+        time.sleep(2)
+        print("In this isolation, the echoes of your own footsteps amplify the emptiness.")
+        return True
+    else:
+        print("Invalid choice. Try again.")
+        return level_four()
+
+def level_five():
+    print("\nLevel 5: The Mirror of Broken Reflections")
+    print("You encounter a mysterious mirror reflecting fractured images of yourself.")
+    print("There are two mirrors named 'Past' and 'Future'.")
+    choice = input("Which mirror do you approach? ").lower()
+
+    if choice == 'past':
+        print("You gaze into the mirror of the past, seeing moments tainted by regret.")
+        time.sleep(2)
+        "The reflections remind you of choices made and paths left behind."
+        return True
+    elif choice == 'future':
+        print("You peer into the mirror of the future, revealing a distorted vision of what might come.")
+        time.sleep(2)
+        print("The uncertainty of what lies ahead fills you with a sense of foreboding.")
+        return True
+    else:
+        print("Invalid choice. Try again.")
+        return level_five()
+
+def level_six():
+    print("\nLevel 6: The Twilight Halls")
+    print("You enter dimly lit halls filled with whispers and shadows.")
+    print("There are three doors labeled 'Regret', 'Remorse', and 'Reckoning'.")
+    choice = input("Which door do you open? ").lower()
+
+    if choice == 'regret':
+        print("You open the door of regret, revealing haunting scenes of what could have been.")
+        time.sleep(2)
+        print("The visions weigh on your heart, leaving a lingering ache.")
+        return True
+    elif choice == 'remorse':
+        print("You choose the door of remorse, facing echoes of actions that cannot be undone.")
+        time.sleep(2)
+        print("The shadows of remorse stretch out, seeking redemption.")
+        return True
+    elif choice == 'reckoning':
+        print("You open the door of reckoning, confronting the consequences of past choices.")
+        time.sleep(2)
+        print("The weight of accountability settles upon your shoulders.")
+        return True
+    else:
+        print("Invalid choice. Try again.")
+        return level_six()
+
+def level_seven():
+    print("\nLevel 7: The Silent Peaks")
+    print("You climb silent peaks covered in mist, each step echoing with solitude.")
+    print("There are two paths ahead named 'Isolation' and 'Reflection'.")
+    choice = input("Which path do you take? ").lower()
+
+    if choice == 'isolation':
+        print("You walk the path of isolation, surrounded by the hushed whispers of the mountains.")
+        time.sleep(2)
+        print("The solitude amplifies the echoes of your own thoughts.")
+        return True
+    elif choice == 'reflection':
+        print("You choose the path of reflection, where the mist reveals glimpses of your inner self.")
+        time.sleep(2)
+        print("The peaks reflect the journey within, revealing hidden facets.")
+        return True
+    else:
+        print("Invalid choice. Try again.")
+        return level_seven()
+
+def level_eight():
+    print("\nLevel 8: The Fading Stars")
+    print("You find yourself in a vast, starlit expanse where the constellations tell tales of loss.")
+    print("There are three constellations named 'Sorrow', 'Regret', and 'Hopelessness'.")
+    choice = input("Which constellation do you contemplate? ").lower()
+
+    if choice == 'sorrow':
+        print("You gaze upon the constellation of sorrow, where stars form patterns of sadness.")
+        time.sleep(2)
+        print("Each twinkle tells a story of tears that never found solace.")
+        return True
+    elif choice == 'regret':
+        print("You ponder the constellation of regret, a celestial map of choices left behind.")
+        time.sleep(2)
+        print("The stars trace the paths of decisions that haunt the cosmic expanse.")
+        return True
+    elif choice == 'hopelessness':
+        print("You stare into the constellation of hopelessness, where stars paint a bleak canvas.")
+        time.sleep(2)
+        print("The cosmic dance reflects the despair that pervades the universe.")
+        return True
+    else:
+        print("Invalid choice. Try again.")
+        return level_eight()
+
+def level_nine():
+    print("\nLevel 9: The Veil of Tears")
+    print("You step through a veil of tears, where each drop holds untold sorrows.")
+    print("There are two realms beyond the veil named 'Memories' and 'Forgiveness'.")
+    choice = input("Which realm do you enter? ").lower()
+
+    if choice == 'memories':
+        print("You traverse the realm of memories, reliving moments engraved with tears.")
+        time.sleep(2)
+        print("The tears create a mosaic of the past, each drop a memory etched in sadness.")
+        return True
+    elif choice == 'forgiveness':
+        print("You enter the realm of forgiveness, where tears are transformed into healing rain.")
+        time.sleep(2)
+        print("The tears cleanse the soul, offering a path towards peace.")
+        return True
+    else:
+        print("Invalid choice. Try again.")
+        return level_nine()
+
+def level_ten():
+    print("\nLevel 10: The Abyss of Desolation")
+    print("You find yourself at the edge of an abyss, a void filled with the echoes of lost dreams.")
+    print("There are two paths leading into the abyss named 'Acceptance' and 'Despair'.")
+    choice = input("Which path do you choose? ").lower()
+
+    if choice == 'acceptance':
+        print("You embrace the path of acceptance, stepping into the abyss with a heavy heart.")
+        time.sleep(2)
+        print("As you descend, the echoes transform into whispers of understanding.")
+        return True
+    elif choice == 'despair':
+        print("You succumb to the path of despair, letting the abyss swallow you whole.")
+        time.sleep(2)
+        print("The darkness consumes every ounce of hope, leaving only echoes of desolation.")
+        return True
+    else:
+        print("Invalid choice. Try again.")
+        return level_ten()
+
+def conclusion():
+    print("\nCongratulations! You've completed the journey through sorrow.")
+    print("As you reflect on your path, you realize that sometimes, the saddest stories are the most meaningful.")
+    print("Thank you for playing 'Lost Hope'.\n")
+
+def play_game():
+    display_intro()
+
+    # Level 1
+    if level_one():
+        # Level 2
+        if level_two():
+            # Level 3
+            if level_three():
+                # Level 4
+                if level_four():
+                    # Level 5
+                    if level_five():
+                        # Level 6
+                        if level_six():
+                            # Level 7
+                            if level_seven():
+                                # Level 8
+                                if level_eight():
+                                    # Level 9
+                                    if level_nine():
+                                        # Level 10
+                                        if level_ten():
+                                            conclusion()
+
+if __name__ == "__main__":
+    play_game()
